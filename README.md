@@ -1,20 +1,99 @@
+
+# Rest API with NodeJs [Technical Test Backend - Dipay]
+
 MUHAMMAD KHIYARUS SYIAM
 
-HOW TO RUN : nodemon server.js
+Ini adalah Technical Test saya sebagai backend di DIPAY, Membuat Rest API dengan Node Js
 
-list api : 
-Duplicate  Zero = [PoST] /duplicateZeros
-Get Country = [GET] /api/v1/countries
+## How To Run API
 
-Admin Login = [POST] /api/v1/admin/login
-Get Employee by Company ID = [GET] /api/v1/companies/:id/employees
-Get Employee by ID = [GET] /api/v1/employees/:id
 
-Add Employee = [POST] /api/v1/employees/add
-Update Employee = [PUT] /api/v1/employees/:id
-Delete Employee = [DELETE] /api/v1/employees/:id
+```bash
+  nodemon server.js
+```
 
-Add Company = [POST] /api/v1/companies/add
-Get Companies = [GET] /api/v1/companies
-Set Active = [PUT]/api/v1/companies/:id/set_active
 
+
+## List API
+
+#### Get Countries
+
+```http
+  GET /api/v1/countries
+```
+
+#### Add Company
+
+```http
+  POST /api/v1/companies/add
+```
+
+#### Get Companies
+
+```http
+  GET /api/v1/companies
+```
+#### Set Active Company
+
+```http
+  PUT /api/v1/companies/:id/set_active
+```
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**. Your token     |
+#### Duplicate Zero
+
+```http
+  POST /duplicateZeros
+```
+#### Update Employee
+
+```http
+  POST /api/v1/employees/:id
+```
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**. Your token     |
+
+#### Delete Employee
+
+```http
+  DEL /api/v1/employees/:id
+```
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**. Your token     |
+
+#### Admin Login
+
+```http
+  POST /api/v1/admin/login
+```
+
+#### Get Employee by Company ID
+
+```http
+  GET /api/v1/companies/:id/employees
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**. Your token     |
+
+
+
+#### Get Employee by ID
+
+```http
+  GET /api/v1/employees/:id
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**. Your token      
+
+
+#### Add Employee
+
+```http
+  POST /api/v1/employees/add
